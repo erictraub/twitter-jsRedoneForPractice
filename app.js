@@ -18,6 +18,7 @@ swig.setDefaults({ cache: false});
 
 app.use(logger);  // using morgan invoked with 'dev' (in vars list) as middlware to log status,etc.
 
+
 // the typical way to use express static middleware \/
 app.use(express.static(__dirname + '/public'));
 
@@ -39,7 +40,8 @@ app.use('/', routes);  // use route handlers in the index.js module (in routes f
 
 
 
-app.listen(3000, function() {
+app.listen(3000, function(err, data) {
+	if (err) return console.error(err);
 	console.log('Listening on port 3000...');
 });
 

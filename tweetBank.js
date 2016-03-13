@@ -3,9 +3,8 @@ var _ = require('lodash');
 
 var data = [];
 
-
 function add(name, text) {
-	data.push({ name: name, text: text});
+	data.push({ name: name, text: text, id: data.length });
 };
 
 
@@ -46,6 +45,7 @@ for (var i = 0; i < 10; i++) {
 
 add('Eric Traub', 'Yoo!  Wassssaaaaaaaapppppp!');
 add('Eric Traub', "What's Gucci homie?");
+
 
 
 

@@ -50,10 +50,22 @@ code {
   height: 48px;
   width: 48px;
   content:url("http://lorempixel.com/48/48");
+  margin-right: 10px;
+  border: 3px solid black;
 }
 .content {
   margin-left: 60px;
 }
 .content .by {
   font-weight: bold;
+}
+
+.tweets {
+  margin-bottom: 30px;
+}
+
+.profilePic {
+  border: 3px solid black;
+    height: 200px;
+  width: 200px;
 }
